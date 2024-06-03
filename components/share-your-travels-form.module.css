@@ -1,0 +1,93 @@
+.label,
+.ssoIcon {
+  position: relative;
+}
+.ssoIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+.label {
+  font-size: var(--font-size-base);
+  letter-spacing: -0.01em;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-gray-200);
+  text-align: left;
+}
+.instagram1 {
+  cursor: pointer;
+  border: 2px solid var(--color-aliceblue);
+  padding: var(--padding-base);
+  background-color: transparent;
+  align-self: stretch;
+  border-radius: var(--br-9980xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-base);
+}
+.instagram1:active {
+  background-color: var(--color-blue);
+}
+.form,
+.shareYourTravelsForm {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.form {
+  margin: 0;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.03);
+  border-radius: var(--br-xs);
+  background-color: var(--color-white);
+  align-items: flex-start;
+  padding: var(--padding-9xl) var(--padding-11xl);
+  gap: var(--gap-mid);
+}
+.shareYourTravelsForm {
+  align-items: center;
+  padding: var(--padding-xl) var(--padding-81xl);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative !important;
+  left: auto !important;
+}
+@media screen and (max-width: 1200px) {
+  .shareYourTravelsForm {
+    padding-left: var(--padding-31xl);
+    padding-right: var(--padding-31xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 960px) {
+  .shareYourTravelsForm {
+    padding: var(--padding-5xl) 0;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative !important;
+    left: auto !important;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .label {
+    font-size: var(--font-size-sm);
+  }
+  .shareYourTravelsForm {
+    display: flex;
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative !important;
+    left: auto !important;
+    width: 100% !important;
+  }
+}

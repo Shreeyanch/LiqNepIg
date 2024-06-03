@@ -1,0 +1,61 @@
+.poweredBy {
+  height: 27px;
+  position: relative;
+  line-height: 130%;
+  font-weight: 300;
+  display: inline-block;
+}
+.letterLogo2 {
+  width: 169px;
+  position: relative;
+  height: 24px;
+  object-fit: cover;
+  mix-blend-mode: normal;
+}
+.demoForm1Inner,
+.poweredByParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.poweredByParent {
+  flex: 1;
+  gap: var(--gap-11xs);
+}
+.demoForm1Inner {
+  align-self: stretch;
+  padding: var(--padding-xl) 0;
+  text-align: center;
+  font-size: var(--font-size-2xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 1200px) {
+  .poweredBy {
+    font-weight: 300;
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-mid);
+  }
+  .demoForm1Inner {
+    display: flex;
+  }
+}
+@media screen and (max-width: 960px) {
+  .demoForm1Inner {
+    display: flex;
+  }
+}
+@media screen and (max-width: 420px) {
+  .poweredBy {
+    font-weight: 100;
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-mini);
+  }
+  .letterLogo2 {
+    width: 100px;
+  }
+  .demoForm1Inner {
+    margin-top: -100px;
+  }
+}
